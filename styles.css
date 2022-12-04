@@ -195,14 +195,16 @@ main{
 }
 
 .shape-background{
+    position: relative;
     margin-top: -7px;
     width: 80%;
-    height: 130vh;
+    height: 115vh;
     clip-path: polygon(0% 100%, 100% 0%, 0% 0%);
     background: var(--main-color-white);
+    z-index:1;
 }
 
-
+/* ABOUT STYLES */
 .about-section{
     position: absolute;
     top: 30px;
@@ -210,6 +212,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    z-index: 2;
 }
 
 .about-section div{
@@ -235,4 +238,82 @@ main{
 .about-section span{
     font-style: italic;
     font-weight: 700;
+}
+
+/* MATERIALS STYLES */
+.materials-section{
+    position: relative;
+    margin-top: -180px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    background: var(--main-color-gold);
+}
+
+.materials-section > p{
+    max-width: 500px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size:clamp(1.8rem, 3vw, 3rem);
+    line-height: 80px;
+    letter-spacing: 0.21em;
+    color: #4B4743;
+    color: var(--main-color-white);
+}
+
+.materials-section p > span{
+    font-weight: 600;
+    font-size:clamp(1.8rem, 3vw, 3rem);
+    color: var(--main-color-white);
+}
+
+.materials-section .materials-grid{
+    max-width: 700px;
+    display:grid;
+    gap:30px 30px;
+    grid-template-columns: repeat(3,1fr);
+    background: var(--main-color-gold);
+}
+
+.materials-grid > div{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+
+.materials-grid > div > img{
+    width: 100%;
+    height: 151px;
+    object-fit: cover;
+}
+
+.materials-grid > div > p{
+    font-weight: 400;
+    font-size:clamp(1.2rem, 3vw, 1.6rem);
+    letter-spacing: 0.3em;
+    line-height:30px;
+    color: #2F2E2D;
+}
+
+.shape-background-two{
+    position: relative;
+    top: 137px;
+    width: 100%;
+    height: 16vh;
+    clip-path: polygon(50% 50%, 100% 0%, 0% 0%);
+    background: var(--main-color-gold);
+}
+
+/* MODELS STYLES */
+
+.models-section{
+    width: 100%;
+    height: 10vh;
+    background: var(--main-color-black);
 }
