@@ -26,11 +26,11 @@ html{
     scroll-behavior: smooth;
 }
 
-
+/* HEADER STYLES */
 .filter{
     position: absolute;
     width: 100%;
-    min-height: 83vh;
+    min-height: 92vh;
     background: linear-gradient(352deg, rgba(34, 34, 34, 0.92) -9.73%, rgba(67, 61, 48, 0.46) 62.77%, rgba(225, 189, 115, 0) 112.37%);
     transform: matrix(1, 0, 0, -1, 0, 0);
     z-index: 10;
@@ -40,7 +40,7 @@ html{
     position: relative;
     top: 0;
     width: 100%;
-    height: 75vh;
+    height: 84vh;
     overflow-x: hidden;
 }
 
@@ -157,6 +157,82 @@ html{
     letter-spacing:-1px;
     color:#856D3B;
     background-color: var(--main-color-white);
-    border-radius:20px;
-    box-shadow: 0px 2px 2px #E1BD73;
+    border-radius:3px;
+    box-shadow: 0px 2px 9px #E1BD73;
+}
+
+
+/* ABOUT STYLES */
+.mid-part{
+    position:relative;
+    width: 100%;
+    height: 19vh;
+    background-color: var(--main-color-white);
+    z-index: 1;
+}
+
+.mid-part .line{
+    position: absolute;
+    right: 0;
+    width: 18%;
+    height: 10px;
+    background-color: var(--main-color-gold);
+}
+
+.line:nth-child(1){
+    bottom: 13px;
+}
+
+.line:nth-child(2){
+    bottom: 35px;
+    width: 15%;
+}
+
+main{
+    position: relative;
+    width: 100%;
+    background-color: var(--main-color-gold);
+}
+
+.shape-background{
+    margin-top: -7px;
+    width: 80%;
+    height: 130vh;
+    clip-path: polygon(0% 100%, 100% 0%, 0% 0%);
+    background: var(--main-color-white);
+}
+
+
+.about-section{
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-section div{
+    margin-top: 2%;
+    margin-left:5%;
+    max-width: 700px;
+    align-self: flex-start;
+}
+
+.about-section h3,span{
+    font-family: 'Montserrat', sans-serif;
+    font-size:clamp(2rem, 3vw, 4rem);
+    font-weight: 500;
+    line-height: 70px;
+    letter-spacing: 0.21em;
+    color: #4B4743;
+}
+
+.about-section h3:nth-child(2){
+    margin-top: 7%;
+}
+
+.about-section span{
+    font-style: italic;
+    font-weight: 700;
 }
