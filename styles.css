@@ -26,6 +26,20 @@ html{
     scroll-behavior: smooth;
 }
 
+.whatsapp-icon{
+    position:fixed;
+    right:40px;
+    bottom: 40px;
+    display: block;
+    width: 80px;
+    height: 80px;
+    background-image: url(./images/whatsApp-icon.png);
+    background-position: center;
+    background-size: cover;
+    z-index: 50;
+}
+
+
 /* HEADER STYLES */
 .filter{
     position: absolute;
@@ -224,20 +238,21 @@ main{
 
 .about-section h3,span{
     font-family: 'Montserrat', sans-serif;
-    font-size:clamp(2rem, 3vw, 4rem);
-    font-weight: 500;
+    font-size:clamp(2rem, 3vw, 3.2rem);
+    font-weight: 300;
     line-height: 70px;
     letter-spacing: 0.21em;
     color: #4B4743;
 }
 
 .about-section h3:nth-child(2){
-    margin-top: 7%;
+    margin-top: 10%;
+    max-width: 600px;
 }
 
 .about-section span{
     font-style: italic;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 /* MATERIALS STYLES */
@@ -365,9 +380,101 @@ main{
 /* FOOTER STYLES */
 
 footer{
-    margin-top:-141px;
+    /* margin-top:-141px; */
     position: relative;
-    height: 20vh;
     width: 100%;
-    background: #222222;
+    display: flex;
+    justify-content: center;
+    background:url("./images/marmol-bckg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+}
+
+.footer-filter{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background:rgba(34, 34, 34, 0.89);
+}
+
+.footer{
+    width:100%;
+    text-align: center;
+    z-index: 5;
+}
+
+.footer > h3{
+    margin-top:50px;
+    font-weight: 700;
+    font-style: italic;
+    font-size:  clamp(4rem, 12vw, 9rem);
+    line-height: 160%;
+    letter-spacing: 0.065em;
+    color: var(--main-color-gold);
+}
+
+.footer > p{
+    margin: 0 auto;
+    width: 60%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: clamp(1.4rem, 3vw, 2.2rem);
+    line-height: 280%;
+    letter-spacing: 0.305em;
+    color: #cecece;
+}
+
+.footer .contact-section {
+    display: flex;
+    justify-content:space-around;
+}
+
+.contact-section > p{
+    margin: 50px 0;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: clamp(1.4rem, 3vw, 2.2rem);
+    line-height: 160%;
+    letter-spacing: 0.065em;
+    color:#cecece;
+}
+
+.contact-section > p > span{
+    margin-right: 20px;
+    display:block;
+    width: 30px;
+    height: 30px;
+    background-image:url(./images/msg-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contact-section > p:last-child > span{
+    background-image: url(./images/phone-icon.png);
+}
+
+
+.info-section{
+    margin-bottom:10px;
+    padding: 0.6em 0;
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    background: var(--main-color-white);
+}
+
+.info-section > h3{
+    font-style: italic;
+    font-weight: 600;
+    font-size: clamp(1.4rem, 3vw, 2.2rem);
+    line-height: 180%;
+    letter-spacing: 0.065em;
+    color: var(--main-color-black);
+}
+
+.info-section a{
+    font-weight: 800;
+    color: var(--main-color-gold);
 }
