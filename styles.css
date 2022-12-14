@@ -33,7 +33,7 @@ html{
     display: block;
     width: 80px;
     height: 80px;
-    background-image: url(./images/whatsApp-icon.png);
+    background-image: url("./images/whatsApp-icon.png");
     background-position: center;
     background-size: cover;
     z-index: 50;
