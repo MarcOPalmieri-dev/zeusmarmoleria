@@ -445,7 +445,7 @@ footer{
     display: flex;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: clamp(1.4rem, 2vw, 2.2rem);
+    font-size: clamp(1.2rem, 2vw, 2.2rem);
     line-height: 160%;
     letter-spacing: 0.065em;
     color:#cecece;
@@ -539,6 +539,10 @@ footer{
         width: 140vw;
     }
 
+    .hero h1{
+        letter-spacing: 0.28em;
+    }
+    
     .hero p{
         font-size:1.6rem;
     }
@@ -561,7 +565,8 @@ footer{
     }
 
     .about-section > img {
-        width: 240px;
+        width: 280px;
+        min-width: 280px;
     }
 
     .materials-section{
@@ -571,6 +576,7 @@ footer{
     .materials-section .materials-grid{
         width: 90%;
         grid-template-columns: repeat(2,1fr);
+        gap: 30px 10px;
     }
 
     .models-section > p, strong{
