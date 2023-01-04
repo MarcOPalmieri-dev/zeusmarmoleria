@@ -18,16 +18,16 @@
         <section class="filter"></section>
         <nav class="navbar">
             <ul>
-                <li>Sobre Nosotros</li>
-                <li>Trabajos</li>
-                <li>Contactanos</li>
+                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                <li><a href="#trabajoss">Trabajos</a></li>
+                <li><a href="#contacto">Contactanos</a></li>
             </ul>
         </nav>
         <section class="hero">
             <h1>ZEUS</h1>
             <h2>Marmolería</h2>
             <p>Servicio personalizado y de confianza</br>basado en años de experiencia.</br></br>Pedí tu presupuesto.</p>
-            <a href="">Contactanos</a>     
+            <a href="#contacto">Contactanos</a>     
         </section>
         <div class="background-container">
             <section class="background">
@@ -44,7 +44,7 @@
         <div class="line"></div>
        
     </section>
-    <main>
+    <main id="sobre-nosotros">
         <div class="shape-background"></div>
         <section class="about-section">
             <div>
@@ -91,14 +91,14 @@
         </section>
         <div class="shape-background-two"></div>
 
-        <section class="models-section">
+        <section id="trabajos" class="models-section">
             <p>Un <strong>trabajo de calidad</strong> hace un <strong>lugar de calidad</strong></p>
             <section class="models-container">
                 <img class="big-image" loading="lazy" src="./images/trabajos.jpg" alt="">
                 <video loading="lazy" autoplay muted loop="true"><source src="./images/video1.mp4" type="video/mp4"></video>
-                <img loading="lazy" src="./images/trabajos4.jpg" alt="">
+                <!-- <img loading="lazy" src="./images/trabajos4.jpg" alt=""> -->
                 <video class="big-image" loading="lazy" autoplay muted loop="true"><source src="./images/video4.mp4" type="video/mp4"></video>
-                <img class="big-image" loading="lazy" src="./images/trabajos3.jpg" alt="">
+                <!-- <img class="big-image" loading="lazy" src="./images/trabajos3.jpg" alt=""> -->
                 <video loading="lazy" autoplay muted loop="true"><source src="./images/video3.mp4" type="video/mp4"></video>
                 <img loading="lazy" src="./images/trabajos5.jpeg" alt="">
                 <video class="big-image" loading="lazy" autoplay muted loop="true"><source src="./images/video2.mp4" type="video/mp4"></video>
@@ -107,7 +107,7 @@
         <!-- <div class="shape-background-three"></div> -->
     </main>
 
-    <footer>
+    <footer id="contacto">
         <div class="footer-filter"></div>
         <section  class="footer">
             <h3>Contactanos</h3>
@@ -115,7 +115,10 @@
             <section class="contact-section">
                 <!-- use ::after y before to icons -->
                 <p><span></span>camilonicolasmoreira@gmail.com</p>
-                <p><span></span>15 6191 4658</p>
+                <div class="phone-container">
+                    <p><span></span>15 6191 4658</p>
+                    <p><span></span>11 5795 6171</p>
+                </div>
             </section>
             <section class="info-section">
                 <h3>©2022 Zeus Marmolería</h3>
