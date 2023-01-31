@@ -33,7 +33,7 @@ html{
     display: block;
     width: 80px;
     height: 80px;
-    background-image: url("./images/whatsApp-icon.png");
+    background-image: url("./images/whatsapp-icon.png");
     background-position: center;
     background-size: cover;
     z-index: 50;
@@ -124,13 +124,14 @@ html{
     height: 80vh;
     display:flex;
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     z-index: 30;
 }
 
 
 .hero h1{
-    margin-top: 80px;
+    margin-top: 50px;
     margin-left: 20px;
     font-size: clamp(8rem, 12vw, 16rem);
     font-weight:bold;
@@ -154,7 +155,7 @@ html{
 }
 
 .hero p{
-    margin-top: 62px;
+    /* margin-top: 62px; */
     text-align:center;
     font-size: clamp(2rem, 1.5vw, 3.8rem);
     font-style: italic;
@@ -166,7 +167,9 @@ html{
 
 
 .hero a{
-    margin-top: 90px;
+    /* margin-top: 90px; */
+    /* position: relative;
+    bottom: 10px; */
     padding: 0.2em 0.7em;
     display: block;
     font-size:clamp(1.8rem, 3vw, 3rem);
@@ -189,6 +192,7 @@ html{
     height: 19vh;
     background-color: var(--main-color-white);
     z-index: 1;
+    overflow: hidden;
 }
 
 .mid-part .line{
@@ -400,7 +404,7 @@ footer{
     width: 100%;
     display: flex;
     justify-content: center;
-    background:url("./images/marmol-bckg.jpg");
+    background:url("./images/marmol-bckg.webp");
     background-size: cover;
     background-position: center;
     background-repeat:no-repeat;
