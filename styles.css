@@ -131,7 +131,7 @@ html{
 
 
 .hero h1{
-    margin-top: 50px;
+    /* margin-top: 50px */
     margin-left: 20px;
     font-size: clamp(8rem, 12vw, 16rem);
     font-weight:bold;
